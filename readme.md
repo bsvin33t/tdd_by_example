@@ -1,4 +1,4 @@
-# Learnings from Chapter 1
+### Learnings from Chapter 1
 
 * When we write a test, we imagine the prefect interface for our operation. we are telling how the operation will look from the outside
 * Our Story will not always come true. But it is better to start from the best possible API and work backwards, than to make things ugly and "realistic" from the get-go
