@@ -4,7 +4,7 @@ require 'currency'
 describe "currency" do
 	it "multuiplies" do
 		five = Dollar.new(5)
-		expect(five.times(2)).to eq(10)
-
+		product = five.times(2)
+		expect(product.amount).to eq(10)
 	end
 end
