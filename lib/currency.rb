@@ -1,5 +1,4 @@
 class Dollar
-	attr_accessor :amount
 	def initialize(amount)
 		@amount = amount
 	end
@@ -11,4 +10,6 @@ class Dollar
 	def equal dollar
 		return @amount == dollar.amount
 	end
+	private
+	:amount
 end

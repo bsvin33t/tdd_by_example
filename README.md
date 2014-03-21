@@ -34,3 +34,6 @@ Value Object:
 
 --------------------------------------------------------------------------------------------------------------
 
+### Learnings from Chapter 4
+
+* With TDD, We are not striving for prefection. By saying everything two ways - both as code and as tests - we hope to reduce out defects enough to move forward with confidence. From time to time, reasoning will fail us and a defect will slip through. When that happens, we learn our lesson about the tests that we should have written and move on.
