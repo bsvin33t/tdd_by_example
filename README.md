@@ -22,3 +22,15 @@
 * First, we can talk about the behaviour of the system. Once behaviour is decided, we can talk about the best way to achive the behaviour
 
 --------------------------------------------------------------------------------------------------------------
+
+### Learnings from Chapter 3
+
+Value Object:
+
+* If 1 is added to an integer, the value of the original integer does not change. Objects usuallydon't behave this way. If a contract exists, and 1 is added to its coverage, the contract's coverage changes.
+* We can use Objects as values. The pattern for this is Value Object. One of the constraints on the alue Obkects is that the values of the instance variables of the object never change once they have veen set in the constructor
+* There is one huge advangege to use Value Objects: we don't have to worry about aliasing problems. If I have 5$, then I'm garenteed that it will always and forever be $5. If someone wants 7$, then they will have to make an entirely new object.
+* One implication of Value Objects is that all operations must return a new object. Another implications is taht Value Objects should implement equals(), because one $5 is pretty much as good as another.
+
+--------------------------------------------------------------------------------------------------------------
+
