@@ -1,4 +1,4 @@
-##Kent Beck's TDD by Example
+## Kent Beck's TDD by Example
 ==============
 
 ### Learnings from Chapter 1
@@ -37,3 +37,27 @@ Value Object:
 ### Learnings from Chapter 4
 
 * With TDD, We are not striving for prefection. By saying everything two ways - both as code and as tests - we hope to reduce out defects enough to move forward with confidence. From time to time, reasoning will fail us and a defect will slip through. When that happens, we learn our lesson about the tests that we should have written and move on.
+
+-------------------------------------------------------------------------------------------------------------
+
+### Learnings from chapter 5
+
+* Different phases of TDD are
+ 1. Write a test.
+ 2. Make it compile.
+ 3. Run it to see that it fails
+ 4. Make it run
+ 5. Remove Duplication
+
+-------------------------------------------------------------------------------------------------------------
+
+### Learnings from Chapter 6
+
+* We will often be implementing TDD in code that does not have adequate tests.
+* When you don't have enough tests, you are bund to come across refactorings that aren't supported by teh tests
+* We could make a refactoring mistake and still the tests would run.
+* The solution to this is, write the tests that you wish you had.
+* If not, you will eventually breake something during refactoring. Which would not be caught by the existing test suite
+
+
+

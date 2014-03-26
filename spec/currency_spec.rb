@@ -1,7 +1,8 @@
 require 'spec_helper'
-require 'currency'
+require 'dollar'
+require 'franc'
 
-describe "currency" do
+describe "Dollar" do
 	it "multiplies" do
 		five = Dollar.new(5)
 		expect(Dollar.new(10) == five.times(2))
@@ -12,6 +13,20 @@ describe "currency" do
 		end
 		it "checks for inequality" do
 			expect(Dollar.new(4) != Dollar.new(5))
+		end
+	end
+end
+describe "Franc" do
+	it "Multiplies" do
+		five = Franc.new(5)
+		expect(Franc.new(10) == five.times(2))
+	end
+	describe "equality" do
+		it "checks for equal" do
+			expect(Franc.new(5) == Franc.new(5))
+		end
+		it "checks for inequality" do
+			expect(Franc.new(4) != Franc.new(5))
 		end
 	end
 end
