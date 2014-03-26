@@ -26,7 +26,15 @@ describe "Franc" do
 			expect(Franc.new(5) == Franc.new(5))
 		end
 		it "checks for inequality" do
-			expect(Franc.new(4) != Franc.new(5))
+			expect(Franc.new(4) == Franc.new(5))
+		end
+	end
+end
+
+describe Money do
+	describe "equality" do
+		it "checks for inequality between diffenent subclasses of Money" do
+			expect(Franc.new(4)).not_to eql(Dollar.new(4))
 		end
 	end
 end

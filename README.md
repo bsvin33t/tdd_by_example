@@ -61,3 +61,9 @@ Value Object:
 
 -------------------------------------------------------------------------------------------------------------
 
+### Learnings from Chapter 7
+
+* Converted an objection into a test
+* Make test run in a reasonable way, event though not perfectly
+
+-------------------------------------------------------------------------------------------------------------
