@@ -8,7 +8,7 @@ describe Dollar do
 		five = Money.dollar(5)
 		puts five.inspect
 		puts five.times(2).inspect
-		expect Money(Money.dollar(10)).to eql five.times(2)
+		expect(Money.dollar(10)).to eql five.times(2)
 	end
 	describe "equality" do
 		it "checks for equal" do
