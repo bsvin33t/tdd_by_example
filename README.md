@@ -67,3 +67,7 @@ Value Object:
 * Make test run in a reasonable way, event though not perfectly
 
 -------------------------------------------------------------------------------------------------------------
+
+### Learnings from Chapter 8
+
+* No Client Code needs to know about the inheritance heirarchy. By Decoupling the tests from the exixtance of the subclasses, we have given outselves freedom to change inhiritance without affecting our model code

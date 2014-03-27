@@ -1,10 +1,8 @@
 require "money"
+
 class Dollar < Money
-	def initialize(amount)
-		@amount = amount
-	end
 
 	def times multiplier
-		return Dollar.new(@amount * multiplier)
-	end	
+		return Money.new(@amount * multiplier)
+	end
 end
