@@ -6,7 +6,8 @@ class Money
 	end
 
 	def eql? money
-		return @amount == money.amount && self.class == money.class
+		@amount == money.amount && 
+		((money.is_a? self.class) ||(self.is_a? money.class))
 	end
 
 	def self.dollar amount
