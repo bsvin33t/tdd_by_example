@@ -88,4 +88,8 @@ Value Object:
 
 --------------------------------------------------------------------------------------------------------------
 
+### Learnings from Chapter 11
 
+* Eliminate test cases that made sense with the older structure but is redundant with the new code
+
+--------------------------------------------------------------------------------------------------------------
