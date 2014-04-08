@@ -6,8 +6,6 @@ require 'money'
 describe Dollar do
 	it "multiplies" do
 		five = Money.dollar(5)
-		puts five.inspect
-		puts five.times(2).inspect
 		expect(Money.dollar(10)).to eql five.times(2)
 	end
 	describe "equality" do
@@ -17,6 +15,9 @@ describe Dollar do
 		it "checks for inequality" do
 			expect(Money.dollar(3)).not_to eql Money.dollar(5)
 		end
+	end
+	it "tells me the name of the currency" do 
+		expect("USD").to eql Money.dollar(1).currency
 	end
 end
 describe Franc do
@@ -31,6 +32,9 @@ describe Franc do
 		it "checks for inequality" do
 			expect(Money.franc(3)).not_to eql Money.franc(5)
 		end
+	end
+	it "tells me the name of the currency" do 
+		expect("CHF").to eql Money.franc(1).currency
 	end
 end
 

@@ -71,3 +71,13 @@ Value Object:
 ### Learnings from Chapter 8
 
 * No Client Code needs to know about the inheritance heirarchy. By Decoupling the tests from the exixtance of the subclasses, we have given outselves freedom to change inhiritance without affecting our model code
+
+--------------------------------------------------------------------------------------------------------------
+
+### Learnings from Chapter 9
+
+* Don't Intrrupt an Intrruption
+* If tiny steps are too restrictive, take larger steps. If feeling unsure, take tiny steps
+* TDD is a steering process. a little this way, a little that way. There is no right step size
+
+--------------------------------------------------------------------------------------------------------------
