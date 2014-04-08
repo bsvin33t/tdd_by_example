@@ -81,3 +81,11 @@ Value Object:
 * TDD is a steering process. a little this way, a little that way. There is no right step size
 
 --------------------------------------------------------------------------------------------------------------
+
+### Learnings from Chaprter 10
+
+* Go backward to move forward(like solving Rubik's Cube)
+
+--------------------------------------------------------------------------------------------------------------
+
+

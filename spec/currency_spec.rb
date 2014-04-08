@@ -43,5 +43,8 @@ describe Money do
 		it "checks for inequality between diffenent subclasses of Money" do
 			expect(Money.franc(4)).not_to eql(Money.dollar(4))
 		end
+		it "checks if the currencies and the values are the same" do
+			expect(Money.new(10, "CHF")).to eql(Franc.new(10, "CHF"))
+		end
 	end
 end
