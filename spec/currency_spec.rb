@@ -30,10 +30,33 @@ describe Money do
 
 	describe "addition" do
 		it "adds same currencies" do
-			sum = Money.dollar(5).plus(Money.dollar(5))
+			five = Money.dollar(5)
+			sum = five.plus(five)
 			bank = Bank.new()
 			reduced = bank.reduce(sum, "USD")
 			expect(reduced).to eql(Money.dollar(10))
+		end
+		it "adds same currencies" do
+			five = Money.dollar(5)
+			sum = five.plus(Money.dollar(2))
+			bank = Bank.new()
+			reduced = bank.reduce(sum, "USD")
+			expect(reduced).to eql(Money.dollar(7))
+		end
+		it "reuturns sum" do
+			five = Money.dollar(5)
+			result = five.plus(five)
+			sum = result
+			expect(five).to eql(sum.augend)
+			expect(five).to eql(sum.addend)
+		end
+	end
+
+	describe "Bank" do
+		it "reduce money" do
+			bank = Bank.new()
+			result = bank.reduce(Money.dollar(1), "USD")
+			expect(Money.dollar(1)).to eql(result)
 		end
 	end
 end

@@ -1,3 +1,4 @@
+require 'sum'
 class Money
 	attr_reader :amount , :currency
 
@@ -11,7 +12,11 @@ class Money
 	end
 
 	def plus addend
-		return Money.new(amount+addend.amount, @currency)
+		Sum.new(self, addend)
+	end
+
+	def reduce to
+		self
 	end
 
 	def eql? money

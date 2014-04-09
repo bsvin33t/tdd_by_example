@@ -105,3 +105,10 @@ Value Object:
 
 --------------------------------------------------------------------------------------------------------------
 
+### Learnings from Chapter 13
+
+* Don't mark test as done because the duplication has not been eliminated
+* Can work forward instead of backward to realize the implementation
+* Introduce polymorphism to eliminate explicit class checking
+
+--------------------------------------------------------------------------------------------------------------
