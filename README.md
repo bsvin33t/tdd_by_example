@@ -93,3 +93,15 @@ Value Object:
 * Eliminate test cases that made sense with the older structure but is redundant with the new code
 
 --------------------------------------------------------------------------------------------------------------
+
+### Learnings from Chapter 12
+
+* Reduce a big test to a smaller test that represented progress
+* Think carefuly about hte possible metaphors for our computation
+* Rewrote our previous test based on our new metaphor
+* Got the test to compile quickly
+* Made it run
+* Looked forward with a bit of trepidation to the refactiring necessary to make the implementation real
+
+--------------------------------------------------------------------------------------------------------------
+

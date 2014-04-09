@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'money'
+require 'bank'
 
 describe Money do
 	it "multiplies" do
@@ -25,5 +26,14 @@ describe Money do
 	it "tells me the name of the currency" do
 		expect("USD").to eql Money.dollar(1).currency
 		expect("CHF").to eql Money.franc(1).currency
+	end
+
+	describe "addition" do
+		it "adds same currencies" do
+			sum = Money.dollar(5).plus(Money.dollar(5))
+			bank = Bank.new()
+			reduced = bank.reduce(sum, "USD")
+			expect(reduced).to eql(Money.dollar(10))
+		end
 	end
 end

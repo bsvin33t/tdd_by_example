@@ -10,6 +10,10 @@ class Money
 		Money.new(@amount * multiplier, @currency)
 	end
 
+	def plus addend
+		return Money.new(amount+addend.amount, @currency)
+	end
+
 	def eql? money
 		@amount == money.amount && 
 		(money.currency == self.currency)
@@ -22,5 +26,4 @@ class Money
 	def self.franc amount
 		Money.new(amount, "CHF")
 	end
-
 end
